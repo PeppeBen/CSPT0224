@@ -25,7 +25,7 @@ void nuovaPartita() {
     scanf(" %s", &risposta);
     if (risposta == 'a' || risposta == 'A') {
         punteggio ++;
-    }
+    } 
 
     printf("\nDomanda n.2: Qual'è la capitale della Francia?\n");
     printf("A) Lille\nB) Parigi\nC) Lione\n");
@@ -33,7 +33,7 @@ void nuovaPartita() {
     scanf(" %s", &risposta);
     if (risposta == 'b' || risposta == 'B') {
         punteggio ++;
-    }
+    } 
 
     printf("\nDomanda n.3: Qual'è la capitale della Germania?\n");
     printf("A) Stoccarda\nB) Monaco\nC) Berlino\n");
@@ -69,7 +69,7 @@ int main ()
             printf("\nScelta non valida, riprova\n");
             system("clear");
         }
-    } while (scegli != 'B' && scegli!= 'b');
+    } while (scegli != 'B' && scegli != 'b');
     
     
     return 0;

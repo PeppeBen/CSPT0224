@@ -3,14 +3,14 @@
 
 void stampaMenu() {
     printf("\nBenvenuto al gioco Q&A:\n");
-    printf("\nDovrai rispondere correttamente per ottenere punti.\n");
+    printf("\nDovrai rispondere alle domande correttamente per ottenere punti.\n");
     printf("\nA- Nuova partita\n");
     printf("\nB- Esci dal gioco\n");
     printf("\nScegli un'opzione:\n");
 }
 
 void nuovaPartita() {
-    char nome[50];
+    char nome[10];
     int punteggio = 0;
     char risposta;
 
@@ -57,7 +57,7 @@ int main ()
 
         if (scegli == 'A'|| scegli == 'a') {
             
-            printf("\nOk");
+            printf("\nBene!\n");
             nuovaPartita();
 
         } else if (scegli == 'B'|| scegli == 'b') {
@@ -65,7 +65,7 @@ int main ()
             break;
 
         } else {
-            printf("\nScelta non valida, riprova");
+            printf("\nScelta non valida, riprova\n");
         }
     } while (scegli != 'B' && scegli!= 'b');
     

@@ -58,16 +58,19 @@ int main ()
         if (scegli == 'A'|| scegli == 'a') {
             
             printf("\nBene!\n");
+            system("clear");
             nuovaPartita();
 
         } else if (scegli == 'B'|| scegli == 'b') {
             printf("\nArrivederci!");
-            break;
+            break; 
 
         } else {
             printf("\nScelta non valida, riprova\n");
+            system("clear");
         }
     } while (scegli != 'B' && scegli!= 'b');
+    
     
     return 0;
 

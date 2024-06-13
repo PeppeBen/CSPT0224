@@ -12,7 +12,7 @@ void stampaMenu() {
 }
 
 void nuovaPartita() {
-    char nome[6];
+    char nome[10];
     int punteggio = 0;
     char risposta;
 

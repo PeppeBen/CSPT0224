@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
+//Intro e menù del gioco
 void stampaMenu() {
     printf("\nBenvenuto al gioco Q&A:\n");
     printf("\nDovrai rispondere alle domande correttamente per ottenere punti.\n");
@@ -10,14 +12,18 @@ void stampaMenu() {
 }
 
 void nuovaPartita() {
-    char nome[10];
+    char nome[6];
     int punteggio = 0;
     char risposta;
 
     printf("\nInserisci il tuo nome: ");
-    scanf("\n%c", nome);
+    scanf("\n%15s", nome);
+    if (strlen(nome)>6) {
+        system("clear");
+        nuovaPartita();
+    }
 
-    printf("\nOk %c, iniziamo!\n", nome);
+    printf("\nOk %s, iniziamo!\n", nome);
 
     printf("\nDomanda n.1: Qual'è la capitale d'Italia?\n");
     printf("A) Roma\nB) Milano\nC) Torino\n");
@@ -43,9 +49,30 @@ void nuovaPartita() {
         punteggio ++;
     }
 
-    printf("\nComplimenti %c, il tuo punteggio finale è: %d\n", nome, punteggio);
+    printf("\nComplimenti %s, il tuo punteggio finale è: %d\n", nome, punteggio);
 }
 
+//inizializzo variabile per il punteggio totale 
+int punteggioTotale = 0;
+const char*filename = "punteggio.txt";
+
+// funz. per scrivere e poi leggere il punteggio per singola partita
+void leggiPunteggio() {
+    FILE *file = fopen(filename, "r");
+    if (file != NULL) {
+        fscanf(file, "%d", &punteggioTotale);
+        fclose(file);
+    }
+}
+
+//funz. per scrivere il punteggio nel file
+void scriviPunteggio() {
+    FILE *file = fopen(filename, "w");
+    if (file != NULL) {
+        fscanf(file, "%d", &punteggioTotale);
+        fclose(file);
+    }
+}
 
 int main ()
 {
@@ -62,6 +89,8 @@ int main ()
                 printf("\nBene!\n");
                 system ("clear");
                 nuovaPartita();
+                leggiPunteggio();
+                scriviPunteggio();
                 break;
 
             case 'b':

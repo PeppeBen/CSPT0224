@@ -10,7 +10,7 @@ while True:
         print(f"\nIl perimetro del quadrato è: {perimetro}\n")
         print(f"\nL'area del quadrato è: {area}\n")
     elif (scelta == 2):
-        base = area
+        base = area 
         altezza = area / 2
         perimetro_r = 2 * (base + altezza)
         area_r = base * altezza
@@ -23,7 +23,7 @@ while True:
         print(f"\nLa circonferenza del cerchio è: {circonferenza}\n")
         print(f"\n L'area del cerchio è: {area_c}\n")
     elif (scelta == 4):
-        print("Alla prossima lezione di geometria, arivederci!")
+        print("Alla prossima lezione di geometria, arrivederci!")
         break
     else:
         print("\nScelta non valida, riprova!\n")

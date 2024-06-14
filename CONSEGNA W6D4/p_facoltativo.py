@@ -2,7 +2,7 @@ import math
 
 scelta = 0
 while True:
-    scelta = int(input("Scegli la figura geometrica:\n1- Quadrato\n2- Rettangolo\n3- Cerchio\n"))
+    scelta = int(input("Scegli la figura geometrica:\n1- Quadrato\n2- Rettangolo\n3- Cerchio\n4- Esci\n"))
     if (scelta == 1):
         lato = int(input("\nScegli la misura del lato: "))
         perimetro = lato * 4
@@ -22,5 +22,8 @@ while True:
         area_c = math.pi * raggio**2
         print(f"\nLa circonferenza del cerchio è: {circonferenza}\n")
         print(f"\n L'area del cerchio è: {area_c}\n")
+    elif (scelta == 4):
+        print("Alla prossima lezione di geometria, arivederci!")
+        break
     else:
         print("\nScelta non valida, riprova!\n")

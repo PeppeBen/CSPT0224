@@ -52,27 +52,6 @@ void nuovaPartita() {
     printf("\nComplimenti %s, il tuo punteggio finale è: %d\n", nome, punteggio);
 }
 
-//inizializzo variabile per il punteggio totale 
-int punteggioTotale = 0;
-const char*filename = "punteggio.txt";
-
-// funz. per scrivere e poi leggere il punteggio per singola partita
-void leggiPunteggio() {
-    FILE *file = fopen(filename, "r");
-    if (file != NULL) {
-        fscanf(file, "%d", &punteggioTotale);
-        fclose(file);
-    }
-}
-
-//funz. per scrivere il punteggio nel file
-void scriviPunteggio() {
-    FILE *file = fopen(filename, "w");
-    if (file != NULL) {
-        fscanf(file, "%d", &punteggioTotale);
-        fclose(file);
-    }
-}
 
 int main ()
 {

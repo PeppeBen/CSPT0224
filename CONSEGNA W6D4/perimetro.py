@@ -1,3 +1,5 @@
+import math
+
 scelta = 0
 while(scelta == 0):
     scelta = int(input("Scegli la figura geometrica: \n1- Quadrato\n2- Rettangolo\n3- Cerchio\n"))
@@ -12,7 +14,7 @@ while(scelta == 0):
         print(f"\nIl perimentro del rettangolo è: {perimetro}\n")
     elif (scelta == 3):
         raggio = int(input("\nInserisci la misura del raggio\n"))
-        perimetro = 2 * 3.14 * raggio
+        perimetro = 2 * math.pi * raggio
         print(f"\nLa circonferenza del cerchio è: {perimetro}\n")
     else:
         print("\nScelta non valida, riprova!\n")

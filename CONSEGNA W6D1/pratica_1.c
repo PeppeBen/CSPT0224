@@ -52,16 +52,13 @@ void nuovaPartita() {
     printf("\nComplimenti %s, il tuo punteggio finale è: %d\n", nome, punteggio);
 }
 
-
 int main ()
 {
     char scegli = '\0';
-
     while (scegli != 'b' && scegli != 'B')
     {
         stampaMenu();
         scanf(" %c", &scegli);
-
         switch(scegli) {
             case 'a':
             case 'A':

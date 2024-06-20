@@ -1,7 +1,7 @@
 import random
 import string
 
-def gen_password(type = "semplice"):
+def gen_password(type):
     if type == "semplice":
         caratteri = string.ascii_letters + string.digits
         lunghezza = 8
@@ -13,6 +13,7 @@ def gen_password(type = "semplice"):
     
     password = ''.join(random.choice(caratteri) for i in range(lunghezza))
     return password
+
 
 password_semplice = gen_password("semplice")
 password_complessa = gen_password("complessa")

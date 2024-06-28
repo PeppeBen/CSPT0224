@@ -1,0 +1,19 @@
+La steganografia è l'arte e la scienza di nascondere informazioni all'interno di altri dati in modo che l'esistenza del messaggio nascosto sia sconosciuta a chiunque non sia il destinatario previsto. A differenza della crittografia, che rende i dati incomprensibili a chiunque non possieda la chiave di decrittazione, la steganografia nasconde il fatto che ci sia un messaggio. Questo metodo è stato usato per secoli, con tecniche che vanno dall'antichità fino all'era digitale.
+Alcune tecniche di steganografia digitale sono:
+1. Immagini: 
+- Least Significant Bit (LSB): Il metodo più comune per nascondere informazioni nelle immagini. I bit meno significativi dei pixel dell'immagine vengono modificati per contenere i dati nascosti. Questa alterazione è impercettibile all'occhio umano.
+- Palette-Based Methods: Cambiando i colori nella palette di un'immagine GIF per nascondere dati.
+
+2. Audio:
+- LSB in Audio: Simile al metodo LSB per le immagini, i bit meno significativi dei campioni audio vengono alterati per nascondere dati.
+- Echo Hiding: Aggiungendo eco a un segnale audio originale con ritardi e intensità specifici per codificare i dati.
+
+3. Video:
+- Utilizzando tecniche simili a quelle delle immagini e dell'audio, ma applicate su frame video.
+- Inter-Frame Differencing: Nascondendo dati nelle differenze tra i frame consecutivi.
+
+4. Testo:
+- Uso di Spaziature e Formattazione: Modificando spazi, linee o formattazioni del testo per nascondere dati.
+- Metodo di Caratteri Invisibili: Usando caratteri che non sono visibili per codificare informazioni.
+
+In sintesi, la steganografia è una tecnica potente per nascondere informazioni in modo discreto, e le sue applicazioni vanno dalla protezione della privacy alla sicurezza delle informazioni.

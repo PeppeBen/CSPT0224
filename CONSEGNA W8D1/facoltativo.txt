@@ -1,0 +1,1 @@
+La differenza cambiando i livelli di sicurezza della web app DVWA sta nei cookies dove vediamo appunto security=low/medium/high/impossible

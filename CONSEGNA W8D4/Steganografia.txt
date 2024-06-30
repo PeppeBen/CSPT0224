@@ -21,7 +21,7 @@ In sintesi, la steganografia è una tecnica potente per nascondere informazioni 
 Un'altra tecnica utilizzata soprattuto dagli hacker per occultare informazioni o un intero codice sono i linguaggi esoterici(ad es. Brainfuck, COW, LOLCODE, Chef, False, Monicelli, ecc.)
 A differenza della crittografia, dove vengono utilizzate delle chiavi per critografre dati e informazioni, l'utilizzo di un linguaggio esoterico può risultare meno sicuro perchè chiunque conosca le modalità di utilizzo del linguaggio può decifrare le informazioni o dati contenute in esso.
 
-Il linguaggio COW utilizza solo 12 istruzioni, ogni istruzione ha un funzione specifica che manipola le celle della memoria. Questo linguaggio non è interpretato quindi avremo bisogno di un interprete: locale(utilizzando ad esempio python) o affidandoci ad un interprete online.
+Il linguaggio COW utilizza solo 12 istruzioni, ogni istruzione ha una funzione specifica che manipola le celle della memoria. Questo linguaggio non è interpretato quindi avremo bisogno di un interprete: locale(utilizzando ad esempio python) o affidandoci ad un interprete online.
 
 Sotto riportiamo un esempio dell'utilizzo del linguaggio COW per eseguire la stringa "Ciao Paolo i Byterebels ti salutano!"
 

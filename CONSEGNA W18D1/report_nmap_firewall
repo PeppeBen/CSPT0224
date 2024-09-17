@@ -1,0 +1,8 @@
+# Nmap 7.94SVN scan initiated Tue Sep 17 20:05:10 2024 as: nmap -sV -Pn -o report_firewall_up 192.168.50.102
+Nmap scan report for 192.168.50.102
+Host is up.
+All 1000 scanned ports on 192.168.50.102 are in ignored states.
+Not shown: 1000 filtered tcp ports (no-response)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Sep 17 20:08:45 2024 -- 1 IP address (1 host up) scanned in 214.96 seconds

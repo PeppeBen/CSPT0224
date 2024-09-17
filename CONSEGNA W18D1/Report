@@ -1,0 +1,2 @@
+Target 192.168.50.102 - Windows 7:
+Analizzando i report della macchina target notiamo che con il firewall attivo le porte vengono filtrate quindi non abbiamo nessun risultato di info sui servizi attivi, invece con il firewall disattivato abbiamo 8 porte aperte e le info relativi ai servizi attivi, tra cui NETBIOS e RPC.

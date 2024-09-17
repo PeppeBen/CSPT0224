@@ -1,6 +1,2 @@
-Target 192.168.50.102:
-Analizzando i report della macchina target che ha sistema Windows 7 vediamo che le porte e i serivizi attivi che il tool riesce a identificare sono uguali ma con il firewall attivo le porte risultano "filtrate" e non "chiuse" come quando è disattivo.
-
-
-Target 192.168.50.103:
-Analizzando i report della macchina target che ha sistema WindowsXP vediamo come con il firewall attivo abbiamo 998 porte TCP che risultano "filtrate" e non abbiamo risposta ed il tool non riesce ad identificare la porta 135 con servizio RPC, che invece succede quando il firewall è disattivato.
+Target 192.168.50.102 - Windows 7:
+Analizzando i report della macchina target notiamo che con il firewall attivo le porte vengono filtrate quindi non abbiamo nessun risultato di info sui servizi attivi, invece con il firewall disattivato abbiamo 8 porte aperte e le info relativi ai servizi attivi, tra cui NETBIOS e RPC.
